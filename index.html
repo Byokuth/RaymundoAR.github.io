@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>AR.js Image Target Example</title>
-    <style>
-        #arjsScene {
-            height: 100vh;
-            width: 100%;
-            position: absolute;
-        }
-    </style>
-</head>
-<body>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+<html lang="es">
+    <head>
+        <title>Raymundo AR</title>
 
-    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-        <a-marker preset="custom" type="pattern" url="http://examples.org/hiro.patt">
-            <a-entity
-                gltf-model="Totoro.glb"
-                scale="1 1 1"
-                position="0 0 0">
-            </a-entity>
-        </a-marker>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <a-entity camera></a-entity>
-    </a-scene>
-</body>
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/dev/aframe/build/aframe-ar.js"></script>
+        
+        <link rel="stylesheet" href="css\style.css">
+    </head>
+    <body>
+         <a-scene embedded arjs>      
+             <a-marker preset="hiro">        
+                  <a-entity
+                    gltf-model="https://cdn.glitch.global/0a1b1887-6659-472f-a5c4-c228866cb421/scene.gltf?v=1685226130329"
+                    scale="0.1 0.1 0.1"
+                    position="0 0 0"
+                   >               
+                   </a-entity>
+             </a-marker>
+             <a-entity camera></a-entity>
+         </a-scene>
+         <script src="script.js"></script>
+     </body>
 </html>
