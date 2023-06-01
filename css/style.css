@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  .a-enter-vr
+  {
+    display: none;
+  }
+  
+  .container
+  {
+      position: absolute;
+      width: 100%;
+      top: 0px;
+      left: 0px;
+      color: #fff;
+  }
+    
+  button
+  {
+      position: relative;
+      z-index: 1;
+      width: 50px;
+      padding: 2em;
+  }
