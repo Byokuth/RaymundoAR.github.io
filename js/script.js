@@ -50,3 +50,13 @@ function controlTextura()
         textureControl = true;
     }
 }
+
+function controlSonido()
+{
+
+}
+
+function controlTexto()
+{
+    
+}
