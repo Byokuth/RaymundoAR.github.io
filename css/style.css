@@ -32,6 +32,9 @@
   {
     z-index: 2;
     display: none;
+    height: 100%;
+    background-color: #272727;
+    text-align: center;
   }
     
   button
@@ -41,4 +44,21 @@
       width: 100px;
       padding: 1.2em;
       margin: 0.1em;
+      border-radius: 0.5rem;
+  }
+
+  #botonAnim
+  {
+    background-color: #6ba2b8;
+    display: none;
+  }
+  #botonTexture
+  {
+    background-color: #7987d6;
+    display: none;
+  }
+  #botonSound
+  {
+    background-color: #a783e0;
+    display: none;
   }

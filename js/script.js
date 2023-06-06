@@ -4,17 +4,25 @@ const modelo2 = document.getElementById("modelo2");
 let sound = document.getElementById("sound");
 let infoText = document.getElementById("textoInfo");
 
+let botonAnim = document.getElementById("botonAnim");
+let botonTexture = document.getElementById("botonTexture");
+let botonSound = document.getElementById("botonSound");
+
 let animControl = false;
 let textureControl = false;
 
 marker.addEventListener('markerFound', () => 
 {
-
+    botonAnim.style.display = "block";
+    botonTexture.style.display = "block";
+    botonSound.style.display = "block";
 });
 
 marker.addEventListener('markerLost', () => 
 {
-
+    botonAnim.style.display = "none";
+    botonTexture.style.display = "none";
+    botonSound.style.display = "none";
 });
 
 function controlAnimacion()
