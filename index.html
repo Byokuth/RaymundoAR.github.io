@@ -25,12 +25,34 @@
                 <div class="col-sm-1 p-3">
                     <button id="botonSound" onclick="controlSonido()"><img src="img\SoundIcon.png"></button>
                 </div>
+                <div class="col-sm-1 p-3">
+                    <button id="botonText" onclick="abrirInfo()"><img src="img\textIcon.png"></button>
+                </div>
             </div>
         </div>
 
         <audio id="sound">
             <source src="sounds\BonitosyGorditos.mp3" type="audio/mpeg">
         </audio>
+
+        <div class="container textoInfo" id="textoInfo" hidden>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4>WEB AR</h4>
+                </div>
+                <div class="col-sm-12">
+                    <img src="img\pattern-Nero.png">
+                </div>
+                <div class="col-sm-12">
+                    <p>
+                        Este es un proyecto de web AR. Utiliza la imagen de arriba para hacer funcionar el image target.
+                    </p>
+                </div>
+                <div class="col-sm-12">
+                    <button id="botonText2" onclick="cerrarInfo()">CERRAR INFO</button>
+                </div>
+            </div>
+        </div>
 
         <a-scene embedded arjs>      
             <a-marker preset="custom" type="pattern" url="pattern\pattern-Nero.patt">        

@@ -27,6 +27,12 @@
       left: 0px;
       color: #fff;
   }
+
+  .textoInfo
+  {
+    z-index: 2;
+    display: none;
+  }
     
   button
   {

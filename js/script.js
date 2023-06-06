@@ -2,6 +2,7 @@ const marker = document.querySelector('a-marker');
 const modelo = document.getElementById("modelo");
 const modelo2 = document.getElementById("modelo2");
 let sound = document.getElementById("sound");
+let infoText = document.getElementById("textoInfo");
 
 let animControl = false;
 let textureControl = false;
@@ -57,4 +58,13 @@ function controlSonido()
     sound.load();
     sound.play();
     soundControl = true;
+}
+
+function abrirInfo()
+{
+    infoText.style.display = "block";
+}
+function cerrarInfo()
+{
+    infoText.style.display = "none";
 }
