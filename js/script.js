@@ -38,7 +38,7 @@ function controlTextura()
     modelo.removeAttribute('gltf-model');
     if(textureControl)
     {
-        modelo.setAttribute('gltf-model','model\skipper.glb');
+        modelo.setAttribute('gltf-model','model\skipper1.glb');
         animControl = false;
     }
     else
