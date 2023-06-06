@@ -1,6 +1,5 @@
 const marker = document.querySelector('a-marker');
 const modelo = document.getElementById("modelo");
-const modelo2 = document.getElementById("modelo2");
 
 const botonAnim = document.getElementById("botonAnim");
 const botonTexture = document.getElementById("botonTexture");
@@ -26,29 +25,24 @@ function controlAnimacion()
     if(animControl)
     {
         modelo.setAttribute('animation-mixer','clip: Static Pose');
-        modelo2.setAttribute('animation-mixer','clip: Static Pose');
         animControl = false;
     }
     else
     {
         modelo.setAttribute('animation-mixer','clip: Take 001');
-        modelo2.setAttribute('animation-mixer','clip: Take 001');
         animControl = true;
     }
 }
 function controlTextura()
 {
-    modelo.removeAttribute('gltf-model');
     if(textureControl)
     {
-        modelo.hidden = false;
-        modelo2.hidden = true;
+        modelo.setAttribute('gltf-model','model\skipper1.glb');
         animControl = false;
     }
     else
     {
-        modelo.hidden = true;
-        modelo2.hidden = false;
+        modelo.setAttribute('gltf-model','model\skipper2.glb');
         animControl = true;
     }
 }
