@@ -1,13 +1,30 @@
 const marker = document.querySelector('a-marker');
+const botonAnim = document.getElementById("botonAnim");
+const modelo = document.getElementById("modelo");
 
-const button1 = document.getElementById("boton");
+botonAnim.onclick = function() {controlAnimacion()};
+
+let animControl = false;
 
 marker.addEventListener('markerFound', () => 
 {
-    button1.hidden = false;
+    botonAnim.hidden = false;
 });
 
 marker.addEventListener('markerLost', () => 
 {
-    button1.hidden = true;
+    botonAnim.hidden = true;
 });
+
+function controlAnimacion()
+{
+    modelo.removeAttribute('animation-mixer');
+    if(animControl)
+    {
+        modelo.setAttribute('animation-mixer','clip: Static Pose');
+    }
+    else
+    {
+        modelo.setAttribute('animation-mixer','clip: Take 001');
+    }
+}
