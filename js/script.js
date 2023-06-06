@@ -1,17 +1,17 @@
 const marker = document.querySelector('a-marker');
-const botonAnim = document.getElementById("botonAnim");
 const modelo = document.getElementById("modelo");
+const botones = document.getElementById("botones");
 
 let animControl = false;
 
 marker.addEventListener('markerFound', () => 
 {
-    botonAnim.hidden = false;
+    botones.hidden = false;
 });
 
 marker.addEventListener('markerLost', () => 
 {
-    botonAnim.hidden = true;
+    botones.hidden = true;
 });
 
 function controlAnimacion()
