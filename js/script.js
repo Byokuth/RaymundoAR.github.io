@@ -1,6 +1,8 @@
 const marker = document.querySelector('a-marker');
 const modelo = document.getElementById("modelo");
 
+let animControl = false;
+let textureControl = false;
 
 marker.addEventListener('markerFound', () => 
 {
@@ -37,7 +39,7 @@ function controlTextura()
     }
     else
     {
-        modelo.setAttribute('gltf-model','model\skipper.glb');
+        modelo.setAttribute('gltf-model','model\skipper1.glb');
         textureControl = true;
     }
 }
