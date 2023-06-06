@@ -2,8 +2,6 @@ const marker = document.querySelector('a-marker');
 const botonAnim = document.getElementById("botonAnim");
 const modelo = document.getElementById("modelo");
 
-botonAnim.onclick = function() {controlAnimacion()};
-
 let animControl = false;
 
 marker.addEventListener('markerFound', () => 
