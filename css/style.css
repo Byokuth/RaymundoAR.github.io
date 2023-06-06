@@ -33,4 +33,6 @@
       position: relative;
       z-index: 1;
       width: 100px;
+      padding: 1.2em;
+      margin: 0.1em;
   }
