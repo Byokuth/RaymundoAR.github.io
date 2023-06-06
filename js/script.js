@@ -25,4 +25,5 @@ function controlAnimacion()
     {
         modelo.setAttribute('animation-mixer','clip: Take 001');
     }
+    animControl = !animControl;
 }
