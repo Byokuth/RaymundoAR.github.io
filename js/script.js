@@ -20,10 +20,11 @@ function controlAnimacion()
     if(animControl)
     {
         modelo.setAttribute('animation-mixer','clip: Static Pose');
+        animControl = false;
     }
     else
     {
         modelo.setAttribute('animation-mixer','clip: Take 001');
+        animControl = true;
     }
-    animControl = !animControl;
 }
