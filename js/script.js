@@ -1,9 +1,11 @@
 const marker = document.querySelector('a-marker');
 const modelo = document.getElementById("modelo");
 const modelo2 = document.getElementById("modelo2");
+let sound = document.getElementById("sound");
 
 let animControl = false;
 let textureControl = false;
+let soundControl = false;
 
 marker.addEventListener('markerFound', () => 
 {
@@ -48,5 +50,20 @@ function controlTextura()
         modelo.setAttribute('visible','false');
         modelo2.setAttribute('visible','true');
         textureControl = true;
+    }
+}
+
+function controlSonido()
+{
+    if(soundControl)
+    {
+        sound.pause();
+        soundControl = false;
+    }
+    else
+    {
+        sound.load();
+        sound.play();
+        soundControl = true;
     }
 }
