@@ -31,15 +31,14 @@ function controlAnimacion()
 
 function controlTextura()
 {
-    modelo.removeAttribute('gltf-model');
     if(textureControl)
     {
-        modelo.setAttribute('gltf-model','model\skipper2.glb');
+        modelo.setAttribute('gltf-model','model\skipper.glb');
         textureControl = false;
     }
     else
     {
-        modelo.setAttribute('gltf-model','model\skipper1.glb');
+        modelo.setAttribute('gltf-model','model\skipper.glb');
         textureControl = true;
     }
 }
