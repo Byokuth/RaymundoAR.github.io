@@ -33,3 +33,16 @@ function controlAnimacion()
         animControl = true;
     }
 }
+function controlTextura()
+{
+    if(textureControl)
+    {
+        modelo.setAttribute('gltf-model','model\skipper1.glb');
+        animControl = false;
+    }
+    else
+    {
+        modelo.setAttribute('gltf-model','model\skipper2.glb');
+        animControl = true;
+    }
+}
