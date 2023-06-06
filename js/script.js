@@ -5,7 +5,6 @@ let sound = document.getElementById("sound");
 
 let animControl = false;
 let textureControl = false;
-let soundControl = false;
 
 marker.addEventListener('markerFound', () => 
 {
@@ -55,15 +54,7 @@ function controlTextura()
 
 function controlSonido()
 {
-    if(soundControl)
-    {
-        sound.pause();
-        soundControl = false;
-    }
-    else
-    {
-        sound.load();
-        sound.play();
-        soundControl = true;
-    }
+    sound.load();
+    sound.play();
+    soundControl = true;
 }
