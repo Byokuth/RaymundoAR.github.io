@@ -1,17 +1,27 @@
 const marker = document.querySelector('a-marker');
 const modelo = document.getElementById("modelo");
-const botones = document.getElementById("botones");
+
+const botonAnim = document.getElementById("botonAnim");
+const botonSound = document.getElementById("botonSound");
+const botonText = document.getElementById("botonText");
+const botonTexture = document.getElementById("botonTexture");
 
 let animControl = false;
 
 marker.addEventListener('markerFound', () => 
 {
-    botones.hidden = false;
+    botonAnim.hidden = false;
+    botonSound.hidden = false;
+    botonText.hidden = false;
+    botonTexture.hidden = false;
 });
 
 marker.addEventListener('markerLost', () => 
 {
-    botones.hidden = true;
+    botonAnim.hidden = true;
+    botonSound.hidden = true;
+    botonText.hidden = true;
+    botonTexture.hidden = true;
 });
 
 function controlAnimacion()
