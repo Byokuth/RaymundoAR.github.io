@@ -34,9 +34,12 @@
         <audio id="sound">
             <source src="sounds\BonitosyGorditos.mp3" type="audio/mpeg">
         </audio>
-
+    <div class="textoContainer">
         <div class="container textoInfo" id="textoInfo">
             <div class="row">
+                <div class="col-sm-12 textoBoton">
+                    <button id="botonText2" onclick="cerrarInfo()">CERRAR INFO</button>
+                </div>
                 <div class="col-sm-12">
                     <h4>WEB AR</h4>
                 </div>
@@ -48,11 +51,10 @@
                         Este es un proyecto de web AR. Utiliza la imagen de arriba para hacer funcionar el image target.
                     </p>
                 </div>
-                <div class="col-sm-12">
-                    <button id="botonText2" onclick="cerrarInfo()">CERRAR INFO</button>
-                </div>
             </div>
         </div>
+    </div>
+        
 
         <a-scene embedded arjs>      
             <a-marker preset="custom" type="pattern" url="pattern\pattern-Nero.patt">        
