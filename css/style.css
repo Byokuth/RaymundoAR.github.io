@@ -21,12 +21,11 @@
   
   .container
   {
+      position: absolute;
+      width: 100%;
+      top: 0px;
+      left: 0px;
       color: #fff;
-  }
-
-  .containerAbsolute
-  {
-    position: absolute;
   }
 
   .textoInfo
@@ -56,10 +55,8 @@
 
   .textoContainer
   {
-    position: absolute;
-    background-color: #272727;
-    z-index: 2;
-    text-align: center;
+    width: 100%;
+    padding: 0 auto;
   }
 
   #botonAnim
