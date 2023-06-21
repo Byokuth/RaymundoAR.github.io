@@ -72,8 +72,8 @@ body
     padding: 0.5rem;
 }
 
-a-scene
+.escena
 {
     z-index: 0;
-    position: fixed;
+    position: absolute;
 }
