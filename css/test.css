@@ -47,8 +47,8 @@ body
 
 .botones
 {
-    max-width: 150px;
-    min-width: 100px;
+    max-width: 120px;
+    min-width: 80px;
     border-radius: 0.5rem;
 }
 
@@ -76,4 +76,5 @@ body
 {
     z-index: 0;
     position: absolute;
+    width: 100%;
 }

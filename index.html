@@ -59,32 +59,33 @@
         <audio id="sound">
             <source src="sounds\BonitosyGorditos.mp3" type="audio/mpeg">
         </audio>
-
-        <a-scene embedded arjs class="escena">      
-            <a-marker preset="custom" type="pattern" url="pattern\pattern-Nero.patt">        
-                <a-entity
-                    id="modelo"
-                    gltf-model="model\skipper1.glb"
-                    scale="0.03 0.03 0.03"
-                    position="0 0 0.5"
-                    rotation="270 0 0"
-                    animation-mixer="clip: Static Pose"
-                    visible="true"
-                >               
-                </a-entity>
-                <a-entity
-                    id="modelo2"
-                    gltf-model="model\skipper2.glb"
-                    scale="0.03 0.03 0.03"
-                    position="0 0 0.5"
-                    rotation="270 0 0"
-                    animation-mixer="clip: Static Pose"
-                    visible="false"
-                >               
-                </a-entity>
-            </a-marker>
-            <a-entity camera></a-entity>
-        </a-scene>
+        <div class="escena">
+            <a-scene embedded arjs>      
+                <a-marker preset="custom" type="pattern" url="pattern\pattern-Nero.patt">        
+                    <a-entity
+                        id="modelo"
+                        gltf-model="model\skipper1.glb"
+                        scale="0.03 0.03 0.03"
+                        position="0 0 0.5"
+                        rotation="270 0 0"
+                        animation-mixer="clip: Static Pose"
+                        visible="true"
+                    >               
+                    </a-entity>
+                    <a-entity
+                        id="modelo2"
+                        gltf-model="model\skipper2.glb"
+                        scale="0.03 0.03 0.03"
+                        position="0 0 0.5"
+                        rotation="270 0 0"
+                        animation-mixer="clip: Static Pose"
+                        visible="false"
+                    >               
+                    </a-entity>
+                </a-marker>
+                <a-entity camera></a-entity>
+            </a-scene>
+        </div>
 
         <script src="js/test.js"></script>
     </body>
