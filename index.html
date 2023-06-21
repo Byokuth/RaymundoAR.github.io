@@ -14,7 +14,7 @@
     </head>
 
     <body>
-        <div class="container">   
+        <div class="container containerAbsolute">   
             <div class="row">
                 <div class="col-sm-1 p-3">
                     <button id="botonText" onclick="abrirInfo()"><img src="img\textIcon.png"></button>
@@ -34,26 +34,33 @@
         <audio id="sound">
             <source src="sounds\BonitosyGorditos.mp3" type="audio/mpeg">
         </audio>
-    <div class="textoContainer">
-        <div class="container textoInfo" id="textoInfo">
-            <div class="row">
-                <div class="col-sm-12 textoBoton">
-                    <button id="botonText2" onclick="cerrarInfo()">CERRAR INFO</button>
-                </div>
-                <div class="col-sm-12">
-                    <h4>WEB AR</h4>
-                </div>
-                <div class="col-sm-12">
-                    <img src="img\pattern-Nero.png">
-                </div>
-                <div class="col-sm-12">
-                    <p>
-                        Este es un proyecto de web AR. Utiliza la imagen de arriba para hacer funcionar el image target.
-                    </p>
+
+        <div class="">
+            <div class="container containerAbsolute textoInfo" id="textoInfo">
+                <div class="row">
+                    <div class="col-sm-4 textoBoton">
+                        <button id="botonText2" onclick="cerrarInfo()">CERRAR INFO</button>
+                    </div>
+                    <div class="col-sm-8">
+                        <h4>WEB AR</h4>
+                    </div>
+                    <div class="col-sm-4">
+                        
+                    </div>
+                    <div class="col-sm-4 textoImg">
+                        <img src="img\pattern-Nero.png">
+                    </div>
+                    <div class="col-sm-4">
+                        
+                    </div>
+                    <div class="col-sm-12">
+                        <p>
+                            Este es un proyecto de web AR. Utiliza la imagen de arriba para hacer funcionar el image target.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
         
 
         <a-scene embedded arjs>      
