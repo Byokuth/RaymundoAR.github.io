@@ -40,7 +40,6 @@ body
 
 .buttonContainer
 {
-    padding-top: 2.5rem;
     position: relative;
     z-index: 1;
 }
@@ -50,4 +49,18 @@ body
     max-width: 100px;
     min-width: 45px;
     border-radius: 0.5rem;
+}
+
+.container
+{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.row 
+{
+    margin: 0;
+    width: 100%;
+    padding: 0;
 }
