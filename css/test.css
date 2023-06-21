@@ -1,0 +1,53 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+img
+{
+    width: 100%;
+}
+body
+{
+    background-color: #3A3A3A;
+}
+  
+.a-enter-vr
+{
+    display: none;
+}
+
+#botonAnim
+{
+  background-color: #6ba2b8;
+  /*display: none;*/
+}
+#botonTexture
+{
+  background-color: #7987d6;
+  /*display: none;*/
+}
+#botonSound
+{
+  background-color: #a783e0;
+  /*display: none;*/
+}
+#botonText
+{
+  background-color: #83d3d6;
+}
+
+.buttonContainer
+{
+    padding-top: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.botones
+{
+    max-width: 100px;
+    min-width: 45px;
+    border-radius: 0.5rem;
+}
