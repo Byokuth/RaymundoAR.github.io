@@ -31,6 +31,61 @@
             </div>
         </div>
 
+        <div class="textContainer" id="textoInfo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 textoBoton">
+                        <button id="botonText2" onclick="cerrarInfo()">CERRAR INFO</button>
+                    </div>
+                    <div class="col-sm-12">
+                        <h4>WEB AR</h4>
+                    </div>
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="img\pattern-Nero.png">
+                    </div>
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-12">
+                        <p>
+                            Este es un proyecto de web AR. Utiliza la imagen de arriba para hacer funcionar el image target.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <audio id="sound">
+            <source src="sounds\BonitosyGorditos.mp3" type="audio/mpeg">
+        </audio>
+
+        <a-scene embedded arjs>      
+            <a-marker preset="custom" type="pattern" url="pattern\pattern-Nero.patt">        
+                <a-entity
+                    id="modelo"
+                    gltf-model="model\skipper1.glb"
+                    scale="0.03 0.03 0.03"
+                    position="0 0 0.5"
+                    rotation="270 0 0"
+                    animation-mixer="clip: Static Pose"
+                    visible="true"
+                >               
+                </a-entity>
+                <a-entity
+                    id="modelo2"
+                    gltf-model="model\skipper2.glb"
+                    scale="0.03 0.03 0.03"
+                    position="0 0 0.5"
+                    rotation="270 0 0"
+                    animation-mixer="clip: Static Pose"
+                    visible="false"
+                >               
+                </a-entity>
+            </a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
+
         <script src="js/test.js"></script>
     </body>
 </html>

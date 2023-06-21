@@ -22,17 +22,17 @@ body
 #botonAnim
 {
   background-color: #6ba2b8;
-  /*display: none;*/
+  display: none;
 }
 #botonTexture
 {
   background-color: #7987d6;
-  /*display: none;*/
+  display: none;
 }
 #botonSound
 {
   background-color: #a783e0;
-  /*display: none;*/
+  display: none;
 }
 #botonText
 {
@@ -41,7 +41,7 @@ body
 
 .buttonContainer
 {
-    position: relative;
+    position: fixed;
     z-index: 1;
 }
 
@@ -50,4 +50,24 @@ body
     max-width: 150px;
     min-width: 100px;
     border-radius: 0.5rem;
+}
+
+.textContainer
+{
+    padding-top: 5px;
+    text-align: center;
+    color:white;
+    font-size: 1rem;
+    background-color: #272727;
+    position: fixed;
+    z-index: 2;
+    display: none;
+}
+.textoBoton
+{
+    text-align: left;
+}
+#botonText2
+{
+    padding: 0.5rem;
 }
